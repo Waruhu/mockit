@@ -125,59 +125,342 @@ For example, if you have a `/user` route setup, go to [http://localhost:3000/use
 
 If you have any questions, features or issues please raise any issue or pull requests you like.
 
-[spectrum-badge]: https://withspectrum.github.io/badge/badge.svg
-[spectrum]: https://spectrum.chat/explore-tech
-[license-badge]: https://img.shields.io/github/license/boyney123/mockit.svg?color=yellow
-[license]: https://github.com/boyney123/react.explore-tech.org/blob/master/LICENSE
-[prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
-[prs]: http://makeapullrequest.com
-[github-watch-badge]: https://img.shields.io/github/watchers/boyney123/mockit.svg?style=social
-[github-watch]: https://github.com/boyney123/mockit/watchers
-[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20mockit%20by%20%40boyney123%20https%3A%2F%2Fgithub.com%2Fboyney123%2Fmockit%20%F0%9F%91%8D
-[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/boyney123/mockit.svg?style=social
-[github-star-badge]: https://img.shields.io/github/stars/boyney123/mockit.svg?style=social
-[github-star]: https://github.com/boyney123/mockit/stargazers
+# Templating
 
-# Donating
+## Faker
 
-If you find this tool useful, feel free to buy me a ☕ 👍
+For faker use this template on response:
 
-[Buy a drink](https://www.paypal.me/boyney123/5)
+```
+{{faker.[category].[type]}}
+```
 
-# License
+replace the category and type with list below
 
-MIT.
+*for example*
 
-## Contributors
+the response is like this
+```
+{
+  "zip_code": "{{faker.address.zipCode}}"
+}
+```
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+the zip_code will be different on every hits
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://medium.com/@boyney123"><img src="https://avatars1.githubusercontent.com/u/3268013?v=4" width="100px;" alt="David Boyne"/><br /><sub><b>David Boyne</b></sub></a><br /><a href="https://github.com/boyney123/mockit/commits?author=boyney123" title="Code">💻</a> <a href="https://github.com/boyney123/mockit/commits?author=boyney123" title="Documentation">📖</a> <a href="#design-boyney123" title="Design">🎨</a> <a href="#ideas-boyney123" title="Ideas, Planning, & Feedback">🤔</a> <a href="#review-boyney123" title="Reviewed Pull Requests">👀</a> <a href="#tool-boyney123" title="Tools">🔧</a></td>
-    <td align="center"><a href="https://medium.com/@liran.tal"><img src="https://avatars1.githubusercontent.com/u/316371?v=4" width="100px;" alt="Liran Tal"/><br /><sub><b>Liran Tal</b></sub></a><br /><a href="#security-lirantal" title="Security">🛡️</a></td>
-    <td align="center"><a href="https://fb.com/RemoveU"><img src="https://avatars1.githubusercontent.com/u/19208123?v=4" width="100px;" alt="Hongarc"/><br /><sub><b>Hongarc</b></sub></a><br /><a href="https://github.com/boyney123/mockit/commits?author=Hongarc" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://hugo.pro"><img src="https://avatars3.githubusercontent.com/u/180032?v=4" width="100px;" alt="Hugo Locurcio"/><br /><sub><b>Hugo Locurcio</b></sub></a><br /><a href="https://github.com/boyney123/mockit/commits?author=Calinou" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.andrewroberthall.co.uk"><img src="https://avatars1.githubusercontent.com/u/724328?v=4" width="100px;" alt="Andrew Hall"/><br /><sub><b>Andrew Hall</b></sub></a><br /><a href="https://github.com/boyney123/mockit/commits?author=FattusMannus" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://grainger.xyz"><img src="https://avatars1.githubusercontent.com/u/1332395?v=4" width="100px;" alt="Peter Grainger"/><br /><sub><b>Peter Grainger</b></sub></a><br /><a href="https://github.com/boyney123/mockit/commits?author=peterjgrainger" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/wohlben"><img src="https://avatars2.githubusercontent.com/u/9362553?v=4" width="100px;" alt="Ben"/><br /><sub><b>Ben</b></sub></a><br /><a href="https://github.com/boyney123/mockit/commits?author=wohlben" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/MCRayRay"><img src="https://avatars1.githubusercontent.com/u/2843957?v=4" width="100px;" alt="MCRayRay"/><br /><sub><b>MCRayRay</b></sub></a><br /><a href="https://github.com/boyney123/mockit/commits?author=MCRayRay" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/fbricon"><img src="https://avatars3.githubusercontent.com/u/148698?v=4" width="100px;" alt="Fred Bricon"/><br /><sub><b>Fred Bricon</b></sub></a><br /><a href="https://github.com/boyney123/mockit/commits?author=fbricon" title="Code">💻</a></td>
-    <td align="center"><a href="https://blog.missj.club"><img src="https://avatars1.githubusercontent.com/u/19582252?v=4" width="100px;" alt="fliu2476"/><br /><sub><b>fliu2476</b></sub></a><br /><a href="https://github.com/boyney123/mockit/issues?q=author%3Afliu2476" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/de314"><img src="https://avatars1.githubusercontent.com/u/816693?v=4" width="100px;" alt="David Esposito"/><br /><sub><b>David Esposito</b></sub></a><br /><a href="https://github.com/boyney123/mockit/commits?author=de314" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/mlaopane"><img src="https://avatars3.githubusercontent.com/u/23735276?v=4" width="100px;" alt="Mickaël"/><br /><sub><b>Mickaël</b></sub></a><br /><a href="https://github.com/boyney123/mockit/commits?author=mlaopane" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/zecarrera"><img src="https://avatars1.githubusercontent.com/u/4092515?v=4" width="100px;" alt="José Carréra Alvares Neto"/><br /><sub><b>José Carréra Alvares Neto</b></sub></a><br /><a href="https://github.com/boyney123/mockit/commits?author=zecarrera" title="Code">💻</a></td>
-  </tr>
-</table>
+### Faker Category and Type
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
+* address
+    * zipCode
+    * zipCodeByState
+    * city
+    * cityPrefix
+    * citySuffix
+    * cityName
+    * streetName
+    * streetAddress
+    * streetSuffix
+    * streetPrefix
+    * secondaryAddress
+    * county
+    * country
+    * countryCode
+    * state
+    * stateAbbr
+    * latitude
+    * longitude
+    * direction
+    * cardinalDirection
+    * ordinalDirection
+    * nearbyGPSCoordinate
+    * timeZone
+* animal
+    * dog
+    * cat
+    * snake
+    * bear
+    * lion
+    * cetacean
+    * horse
+    * bird
+    * cow
+    * fish
+    * crocodilia
+    * insect
+    * rabbit
+    * type
+* commerce
+    * color
+    * department
+    * productName
+    * price
+    * productAdjective
+    * productMaterial
+    * product
+    * productDescription
+* company
+    * suffixes
+    * companyName
+    * companySuffix
+    * catchPhrase
+    * bs
+    * catchPhraseAdjective
+    * catchPhraseDescriptor
+    * catchPhraseNoun
+    * bsAdjective
+    * bsBuzz
+    * bsNoun
+* database
+    * column
+    * type
+    * collation
+    * engine
+* datatype
+    * number
+    * float
+    * datetime
+    * string
+    * uuid
+    * boolean
+    * hexaDecimal
+    * json
+    * array
+* date
+    * past
+    * future
+    * between
+    * betweens
+    * recent
+    * soon
+    * month
+    * weekday
+* fake
+* finance
+    * account
+    * accountName
+    * routingNumber
+    * mask
+    * amount
+    * transactionType
+    * currencyCode
+    * currencyName
+    * currencySymbol
+    * bitcoinAddress
+    * litecoinAddress
+    * creditCardNumber
+    * creditCardCVV
+    * ethereumAddress
+    * iban
+    * bic
+    * transactionDescription
+* git
+    * branch
+    * commitEntry
+    * commitMessage
+    * commitSha
+    * shortSha
+* hacker
+    * abbreviation
+    * adjective
+    * noun
+    * verb
+    * ingverb
+    * phrase
+* helpers
+    * randomize
+    * slugify
+    * replaceSymbolWithNumber
+    * replaceSymbols
+    * replaceCreditCardSymbols
+    * repeatString
+    * regexpStyleStringParse
+    * shuffle
+    * mustache
+    * createCard
+    * contextualCard
+    * userCard
+    * createTransaction
+* image
+    * image
+    * avatar
+    * imageUrl
+    * abstract
+    * animals
+    * business
+    * cats
+    * city
+    * food
+    * nightlife
+    * fashion
+    * people
+    * nature
+    * sports
+    * technics
+    * transport
+    * dataUri
+    * lorempixel
+    * unsplash
+    * lorempicsum
+* internet
+    * avatar
+    * email
+    * exampleEmail
+    * userName
+    * protocol
+    * httpMethod
+    * url
+    * domainName
+    * domainSuffix
+    * domainWord
+    * ip
+    * ipv6
+    * port
+    * userAgent
+    * color
+    * mac
+    * password
+* lorem
+    * word
+    * words
+    * sentence
+    * slug
+    * sentences
+    * paragraph
+    * paragraphs
+    * text
+    * lines
+* mersenne
+    * rand
+    * seed
+    * seed_array
+* music
+    * genre
+* name
+    * firstName
+    * lastName
+    * middleName
+    * findName
+    * jobTitle
+    * gender
+    * prefix
+    * suffix
+    * title
+    * jobDescriptor
+    * jobArea
+    * jobType
+* phone
+    * phoneNumber
+    * phoneNumberFormat
+    * phoneFormats
+* random
+    * number
+    * float
+    * arrayElement
+    * arrayElements
+    * objectElement
+    * uuid
+    * boolean
+    * word
+    * words
+    * image
+    * locale
+    * alpha
+    * alphaNumeric
+    * hexaDecimal
+* system
+    * fileName
+    * commonFileName
+    * mimeType
+    * commonFileType
+    * commonFileExt
+    * fileType
+    * fileExt
+    * directoryPath
+    * filePath
+    * semver
+* time
+    * recent
+* unique
+* vehicle
+    * vehicle
+    * manufacturer
+    * model
+    * type
+    * fuel
+    * vin
+    * color
+    * vrm
+    * bicycle
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+## Request Forwarding
+For request forwarding on response use this template on response:
+```
+{{req.[request body]}}
+```
+
+It will find from query param first, if not found then try to find on payload body
+
+*for example*
+
+the response is like this
+```
+{
+  "order_id": "{{req.data.order.id}}"
+}
+```
+
+and the request payload will look like this
+```
+{
+  "data": {
+    {
+      "order":{
+        "id": "this string will show on response"
+      }
+    }
+  }
+}
+```
+
+# Parameterized URL
+Mockit supports for parameterized URL Param, this can be achieved by declaring segment that wants to be set as path as `:pathName` (reference: [Express - Route Parameters](https://expressjs.com/en/guide/routing.html))
+
+To add parameter to your response, simply add `{{param.parameterName}}` to your response
+
+```
+GET /users/:id/detail
+{
+    "id": "{{param.id}}",
+    "name": "John"
+}
+```
+
+Once user requested that endpoint along with ID at the URL, parameter will resolved to the actual parameter value
+```
+GET /users/5/detail
+{
+    "id": "5",
+    "name": "John"
+}
+```
+
+# Conditions
+Conditions allows user to return multiple responses based on condition that are given on the expressions. To start, simply click "Add Condition" below response (note: If there's any conditions set, previous response will be treated as Fallback when there's no condition fulfilled)
+
+## Available Expression Parameters
+* `==` (Equal)
+* `!=` (Not Equal)
+* `<` (Less than)
+* `>` (Greater than)
+* `<=` (Less than Equal)
+* `>=` (Greater than Equal)
+
+## Available Expression Key
+* `param.*` - Value will be taken from URL parameter (see Parameterized URL)
+* `req.*` - Value will be taken from request body (See [flat npm package](https://www.npmjs.com/package/flat) for the notation)
+* `header.*` - Value will be taken from header
+
+# Attribution
+
+This repository is forked from [Github](https://github.com/boyney123/mockit) and edited for fulfill delos requirement.
